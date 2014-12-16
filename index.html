@@ -1,17 +1,37 @@
 <!DOCTYPE HTML>
 
-<html>
+<html lang="en">
 <head>
+  <meta charset="utf-8">
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
 <body>
+  <nav>
+    <button id="menuToggle">Show/Hide Menu</button>
+    <ul>
+      <li><a href="http://davestrus.com/"> One Last Person</a></li>
+      <li><a href="http://davestrus.com/data/people.json">see person</a></li>
+      <li><a></a></li>
+      <li><a></a></li>
+    </ul>
 
+  </nav>
 
-<script src="js/jquery-2.1.1.min.js"></script>
-<script src="js/jquery-ui.min.js"></script>
-<script src="js/scripts.js"></script>
+  <main>
+    <ul id="people"></ul>
+  </main>
+
+  <li id="template" class="hidden">
+      {{person.firstName}} {{person.lastName}}
+      ({{person.secret}})
+  </li>
+
+  <script src="js/jquery-2.1.1.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>
